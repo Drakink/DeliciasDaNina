@@ -1,0 +1,67 @@
+#Pedido{
+  width: 100vw;
+  height: 85vh;
+  background-image: url('https://cdn.awsli.com.br/1817/1817091/produto/108951067/e6c1a24d35.jpg');
+  background-size: 125%;
+  background-position: center;
+}
+#Pedido h1, #espacamento{
+  background-color: rgb(0, 0, 0, 0.8);
+  color: rgb(236, 138, 138);
+}
+#Pedido h2{
+  color: rgb(236, 138, 138);
+}
+#Pedido .coluna{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+form {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.docinhos, .salgadinhos{
+  display: flex;
+  width: 25vw;
+  justify-content: space-between;
+  align-items: center;
+}
+label {
+  color: rgb(236, 138, 138);
+  display: block;
+  margin-bottom: 10px;
+}
+select{
+  width:15vw;
+}
+input[type="number"]{
+  width: 5vw;
+}
+input[type="text"] {
+  width: 20vw;
+  height: auto;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+input[type="submit"], input[type="reset"] {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 1vh 2vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #e65c00;
+}

@@ -1,0 +1,39 @@
+#pag-inicial{
+    height: 85vh;
+    width: 100vw;
+    background-image: url('https://cdn.awsli.com.br/1817/1817091/produto/108951067/e6c1a24d35.jpg');
+    background-size: 125%;
+    background-position: center;
+}
+#pag-inicial h1, #espacamento{
+  background-color: rgb(0, 0, 0, 0.8);
+  color: rgb(236, 138, 138);
+}
+#pag-inicial h2, #pag-inicial p{
+  color: rgb(236, 138, 138);
+}
+#pag-inicial img{
+    display: block;
+    width: 15vw;
+    height: 20vh;
+    object-fit: cover;
+}
+#pag-inicial #grid_home{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+.coluna{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#grid_home li{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30vh;
+}

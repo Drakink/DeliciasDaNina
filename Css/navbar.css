@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(236, 138, 138)
+}
+#Logo-Menu{
+    height: 20vh;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.botao-menu a{
+  text-decoration: none;
+  height: 7.5vh;
+  padding: 0 3vw;
+  display: flex;
+  align-items: center;
+}
+#Logo{
+  align-self: flex-start;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  color: rgb(251, 245, 121);
+}
+.botao-menu:hover{
+  background-color: rgb(250, 98, 95);
+  border-radius: 10px;
+}

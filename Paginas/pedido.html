@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Css/style.css">
+    <title>Pagamento</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="botao-menu"><a href="./kitfesta.html">Kits Festa</a></li> 
+      <li class="botao-menu"><a href="./doces.html">Doces</a></li> 
+      <li id="Logo"><a href="../index.html"><img src="../Imagens/Logo Correta.png" alt="Logo" id="Logo-Menu"></a></li>
+      <li class="botao-menu"><a href="./salgados.html">Salgados</a></li> 
+      <li class="botao-menu"><a href="./pedido.html">Faça Seu Pedido</a></li>
+    </ul>
+  </nav>
+  <main id="Pedido">
+      <div id="espacamento" style="height: 10vh;"></div> <!--Espaçamento da imagem para o main-->
+        <h1>Faça seu pedido: </h1>
+        <form id="formulario-pedido" onsubmit="return processarFormulario()" method="POST">
+          <div class="coluna">
+            <h2>Informações do Cliente:</h2>
+            <div>
+              <label for="Nome">Nome: </label>
+              <input type="text" id="Nome" name="Nome" required>
+            </div>
+            <div>
+              <label for="Endereco">Endereço:</label>
+              <input type="text" id="Endereco" name="Endereco" required>
+            </div>
+            <div>
+              <label for="Telefone">Telefone para contato:</label>
+              <input type="text" id="Telefone" name="Telefone" required>
+            </div>
+            <div>
+              <input type="submit" value="Finalizar Pagamento">
+              <input type="reset" value="Limpar Pedido">
+            </div>
+          </div>
+          <div class="coluna">
+            <h2>Selecione seu Kit: </h2>
+            <div>
+              <select name="kits festa" id="KitFesta">
+                <option value="" selected>Selecione o seu Kit</option>
+                <option value="kit-festa-mini"> Kit Festa Mini</option>
+                <option value="kit-festa-pequeno"> Kit Festa Pequeno</option>
+                <option value="kit-festa-Médio">Kit Festa Médio</option>
+                <option value="kit-festa-grande">Kit Festa Grande</option> 
+              </select>
+              <input type="number" name="Quantidade" id="Quantidade-Kit">
+            </div>
+            <h2>Selecione sua Torta: </h2>
+            <div>
+              <select name="Tortas" id="Tortas">
+                <option value="" selected>Selecione a sua Torta</option>
+                <option value="bolo de 1,5kg"> Bolo de 1,5kg</option>
+                <option value="Bolo de 2,5kg"> Bolo de 2,5kg</option>
+                <option value="Bolo de 3,5kg">Bolo de 3,5kg</option>
+                <option value="Bolo de 4,5">Bolo de 4,5kg</option> 
+                <option value="Bolo Simples"> Bolo Simples</option>
+                <option value="Bolo Vulcão">Bolo Vulcão</option>
+                <option value="Bolo de Noiva">Bolo de Noiva</option> 
+                <option value="Bolo Junino"> Bolo Junino</option>
+                <option value="Chocolatudo">Chocolatudo</option>
+                <option value="Bentô Cake">Bentô Cake</option> 
+              </select>
+              <input type="number" name="Quantidade" id="Quantidade-Tortas">
+            </div>
+            <h2>Selecione seu Doce: </h2>
+            <div class="docinhos">
+              <input type="checkbox" name="Brigadeiro" id="Brigadeiro">
+              <label for="Brigadeiro">Brigadeiro</label>
+              <input type="number" name="Quantidade" id="Quantidade-Brigadeiro">
+            </div>
+            <div class="docinhos">
+              <input type="checkbox" name="Beijinho" id="Beijinho">
+              <label for="Beijinho">Beijinho</label>
+              <input type="number" name="Quantidade" id="Quantidade-Beijinho">
+            </div>
+            <div class="docinhos">
+              <input type="checkbox" name="BemCasado" id="BemCasado">
+              <label for="BemCasado">Bem casado</label>
+              <input type="number" name="Quantidade" id="Quantidade-BemCasado">
+            </div>
+            <div class="docinhos">
+              <input type="checkbox" name="Moranguinho" id="Moranguinho">
+              <label for="Moranguinho">Moranguinho</label>
+              <input type="number" name="Quantidade" id="Quantidade-Moranguinho">
+            </div>
+            <div class="docinhos">
+              <input type="checkbox" name="Pacoquinha" id="Pacoquinha">
+              <label for="Pacoquinha">Paçoquinha</label>
+              <input type="number" name="Quantidade" id="Quantidade-Pacoquinha">
+            </div>
+            <h2>Selecione seu Salgado: </h2>
+            <div class="salgadinhos">
+              <input type="checkbox" name="Coxinha" id="Coxinha">
+              <label for="Coxinha">Coxinha</label>
+              <input type="number" name="Quantidade" id="Quantidade-Coxinha">
+            </div>
+            <div class="salgadinhos">
+              <input type="checkbox" name="Enroladinho" id="Enroladinho">
+              <label for="Enroladinho">Enroladinho</label>
+              <input type="number" name="Quantidade" id="Quantidade-Enroladinho">
+            </div>
+            <div class="salgadinhos">
+              <input type="checkbox" name="BolinhaDeQueijo" id="BolinhaDeQueijo">
+            <label for="BolinhaDeQueijo">Bolinha de Queijo</label>
+            <input type="number" name="Quantidade" id="Quantidade-Bolinha">
+          </div>
+          <div class="salgadinhos">
+            <input type="checkbox" name="Pastelzinho" id="Pastelzinho">
+            <label for="Pastelzinho">Pastelzinho</label>
+            <input type="number" name="Quantidade" id="Quantidade-Pastelzinho">
+          </div>
+        </div>
+        </form>
+      </main>
+      <footer>
+        <p>&copy; 2023 Página de Pedido</p>
+        <p><img src="../Imagens/Icon-wpp.png" alt="Ícone do WhatsApp">(81) 99563-7185</p>
+      </footer>
+      <script>
+        function processarFormulario() {
+          var Nome = document.getElementById('Nome').value;
+          var Endereco = document.getElementById('Endereco').value;
+          var Telefone = document.getElementById('Telefone').value;
+
+          var KitFesta = document.getElementById('KitFesta').value;
+          var QuantidadeKit = document.getElementById('Quantidade-Kit').value;
+          var Tortas = document.getElementById('Tortas').value;
+          var QuantidadeTortas = document.getElementById('Quantidade-Tortas').value;
+
+          var Brigadeiro = document.getElementById('Brigadeiro').value;
+          var QuantidadeBrigadeiro = document.getElementById('Quantidade-Brigadeiro').value;
+          var Beijinho = document.getElementById('Beijinho').value;
+          var QuantidadeBeijinho = document.getElementById('Quantidade-Beijinho').value;
+          var BemCasado = document.getElementById('BemCasado').value;
+          var QuantidadeBemCasado = document.getElementById('Quantidade-BemCasado').value;
+          var Moranguinho = document.getElementById('Moranguinho').value;
+          var QuantidadeMoranguinho = document.getElementById('Quantidade-Moranguinho').value;
+          var Pacoquinha = document.getElementById('Pacoquinha').value;
+          var QuantidadePacoquinha = document.getElementById('Quantidade-Pacoquinha').value;
+
+          var Coxinha = document.getElementById('Coxinha').value;
+          var QuantidadeCoxinha = document.getElementById('Quantidade-Coxinha').value;
+          var Enroladinho = document.getElementById('Enroladinho').value;
+          var QuantidadeEnroladinho = document.getElementById('Quantidade-Enroladinho').value;
+          var Bolinha = document.getElementById('BolinhaDeQueijo').value;
+          var QuantidadeBolinha = document.getElementById('Quantidade-Bolinha').value;
+          var Pastelzinho = document.getElementById('Pastelzinho').value;
+          var QuantidadePastelzinho = document.getElementById('Quantidade-Pastelzinho').value;
+
+          alert('Pedido enviado com sucesso! Por favor, aguarde a confirmação pelo Whatsapp. <3');
+          document.getElementById('formulario-pedido').reset();
+          return false;
+        }
+      </script>
+</body>
+</html>
